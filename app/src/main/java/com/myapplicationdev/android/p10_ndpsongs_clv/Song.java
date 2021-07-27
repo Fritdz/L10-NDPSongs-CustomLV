@@ -70,6 +70,22 @@ public class Song implements Serializable {
         return this;
     }
 
+
+    public String YeartoString(){
+        String yearString = "" + yearReleased;
+        return yearString;
+    }
+
+    public String StarstoString() {
+        String starsString = "";
+
+        for(int i = 0; i < stars; i++){
+            starsString += " *";
+        }
+        return starsString;
+
+    }
+
     @Override
     public String toString() {
         String starsString = "";
